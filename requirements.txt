@@ -1,0 +1,8 @@
+pystac-client
+planetary_computer
+numpy
+pandas
+xarray
+zarr
+adlfs
+cartopy
