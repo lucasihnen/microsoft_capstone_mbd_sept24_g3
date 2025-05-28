@@ -1,0 +1,17 @@
+name: mlops_project
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - xarray
+  - zarr
+  - cartopy
+  - pip
+  - pip:
+      - pystac-client
+      - planetary_computer
+      - adlfs
