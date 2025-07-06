@@ -6,6 +6,6 @@ xarray
 zarr
 adlfs
 cartopy
+shap
 optuna
 joblib
-shap

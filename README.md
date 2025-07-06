@@ -117,3 +117,4 @@ Supporting notebooks for the California use case can be found in the [`/other_re
 ## ⚖️ Ethics Statement
 
 This project is the result of original work conducted in full alignment with **IE University’s academic integrity guidelines**. We prioritized transparency, fairness, and reproducibility at every stage of the process. All data used is **publicly available**, primarily sourced from the **Microsoft Planetary Computer (gridMET)** and the **CDC FluView platform**, and all collaborators and sources have been duly acknowledged.
+
