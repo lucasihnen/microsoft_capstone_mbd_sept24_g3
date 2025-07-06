@@ -42,7 +42,7 @@ We selected **Rochester, New York** as our initial focus to develop a proof of c
 - **Access**: Manual download via FluView Interactive platform (CSV format)
 
 ## 🔧 Initial Setup
-There are many libraries used for this project, from Machine Learning frameworks to libraries required for properly handling the Planetary Data gridMET dataset. You can install them directly from the `requirements.txt` file using the command:
+There are many libraries used for this project, from Machine Learning frameworks to libraries required for properly handling the Planetary Data gridMET dataset. You can install them directly from the [`requirements.txt`](requirements.txt) file using the command:
 ```bash
 pip install -r requirements.txt
 ```
@@ -50,18 +50,19 @@ pip install -r requirements.txt
 ## 📁 Repository Structure
 ```bash
 microsoft_capstone_mbd_sept24_g3/ 
-├── data/
+├── data/ # Supporting data for the main notebooks
 │ ├── gridmet.csv
 │ ├── rochester.csv
 │ ├── california gridmet.csv
 │ ├── california.csv
-│ └── others/
-├── other_regions/
-│ ├── EDA - California.ipynb
-│ └── Prediction Model - California.ipynb
+│ └── others/ # Deprecated dataset extractions 
 ├── 1_gridmet_polygon_extraction.ipynb
 ├── 2_eda.ipynb
 ├── 3_model.ipynb
+├── other_regions/ # To showcase reusability of the notebook on another region
+│ ├── 1_gridmet_polygon_extraction_california.ipynb
+│ ├── 2_eda_california.ipynb
+│ └── 3_model_california.ipynb
 ├── README.md 
 └── requirements.txt
 ```
@@ -91,7 +92,7 @@ This notebook is the entry point for working with the gridMET dataset. It focuse
 
 The extracted data is stored in the folder [`data/`](./data/) as a standardized CSV/Parquet format, ready for downstream analysis. This modular approach allows the same pipeline to be reused for different regions with minimal changes.  
 
-**Note: For the Flu dataset, there is no programmatic integration, so the extraction must be done manually from the [CDC FluView Interactive](https://gis.cdc.gov/GRASP/Fluview/FluHospRates.html) webpage.**
+**Note: For the FluView dataset, there is no programmatic integration, so the extraction must be done manually from the [CDC FluView Interactive](https://gis.cdc.gov/GRASP/Fluview/FluHospRates.html) webpage.**
 
 ### 📊 `2_eda.ipynb`
 🔗 [`/2_eda.ipynb`](./2_eda.ipynb)
