@@ -50,6 +50,7 @@ pip install -r requirements.txt
 ## 📁 Repository Structure
 ```bash
 microsoft_capstone_mbd_sept24_g3/ 
+├── deliverables/ # Folder with all the formal deliverables for the Capstone Project!
 ├── data/ # Supporting data for the main notebooks
 │ ├── gridmet.csv
 │ ├── rochester.csv
